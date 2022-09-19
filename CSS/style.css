@@ -1,0 +1,179 @@
+/*Importar Fontes, fontes importadas do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Righteous&family=Roboto&family=Sarala&display=swap');
+
+/*O * é utilizado para formatar todas tags do HTML, neste ponto anulo todas as pré configurações do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #3d3d3d;
+}
+
+.cabecalho {
+    background: #0e0e0e;
+    display: flex;
+    /*ação: fileira*/
+    flex-direction: row;
+    align-items: center;
+    /*itens são distribuídos de forma uniforme, com margens iguais à esquerda e à direita, acima e abaixo também*/
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 80px; 
+    width: 170px;
+    border: none;
+}
+
+.cabecalho-menu {
+    display: flex;
+    /*distância entre as âncoras, opções do menu*/
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cabecalho-menu-item:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.conteudo {
+    /*colocar espaço na margem ao final do conteúdo principal*/
+    margin-bottom: 50px;
+    /*colocar linha de divisão entre o cabeçalho e o conteúdo principal*/     
+    border-top: 0.4px solid #ffffff;
+}
+
+.conteudo-principal {
+    /*colocar espaço na margem ao início do conteúdo principal*/
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.conteudo-principal-escrito-subtitulo01 {
+    font-family: 'Sarala', sans-serif;
+    font-family: 400;
+    font-size: 25px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-subtitulo02 {
+    font-family: 'Sarala', sans-serif;
+    font-family: 400;
+    font-size: 17px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2F2325;
+    cursor: pointer;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+    height: 300px;
+    width: 305px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.conteudo-secundario {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #ffffff;
+    padding-top: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-family: 300;
+    font-size: 14px;
+    color: #ECD6C4;
+    width: 100%;
+    text-align: justify;
+    /*Espaço do início da cada parágrafo*/
+    text-indent: 30px;    
+}
+
+.conteudo-secundario-paragrafo-lista {
+    width: 100%;
+    font-family: "Sarala", sans-serif;
+    font-family: 300;
+    font-size: 14px;
+    color: #ecd6c4;
+    padding-left: 48px;
+}
+
+.rodape {
+    background: #0e0e0e;
+    padding: 32px;
+    border-top: 0.4px solid #ffffff;
+}
+
+.rodape-imagem {
+    height: 50px;
+    width: 110px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape-paragrafo{
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    padding-top: 5px;
+}
